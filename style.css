@@ -1,4 +1,4 @@
-.cat-container {
+.cat-container:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
