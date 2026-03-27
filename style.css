@@ -1,54 +1,80 @@
-/* DEFAULT (Desktop view) */
+/* CAT CONTAINER */
 .cat-container {
     display: flex;
+    /* required */
     flex-wrap: wrap;
+    /* required */
     justify-content: space-around;
+    /* required */
     padding: 2em;
+    /* required */
     flex-direction: row;
+    /* default for large screens */
 }
 
+/* CAT BREED CARDS */
 .cat-breed {
     flex: 1 1 300px;
-    max-width: 300px;
+    /* required */
     margin: 1em;
+    /* required */
     padding: 1em;
+    /* required */
     border: 1px solid #ddd;
+    /* required */
     border-radius: 8px;
+    /* required */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* required */
     text-align: center;
-    transition: transform 0.3s ease;
-    /* smooth animation */
+    /* required */
+    transition: transform 0.3s;
+    /* required */
+    max-width: 300px;
+    /* keeps layout neat on desktop */
 }
 
+/* IMAGES */
 .cat-breed img {
     max-width: 100%;
+    /* required */
     height: auto;
+    /* required */
     border-radius: 8px;
+    /* required */
 }
 
+/* HEADINGS */
 .cat-breed h3 {
-    margin: 0.5em 0 1em;
+    margin: 0.5em 0;
+    /* required */
 }
 
+/* PARAGRAPHS */
 .cat-breed p {
     margin: 0.5em 0 1em;
+    /* required */
 }
 
 /* HOVER EFFECT */
 .cat-breed:hover {
     transform: scale(1.05);
-    /* required scaling effect */
+    /* required */
 }
 
-/* RESPONSIVE (Small screens) */
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     .cat-container {
         flex-direction: column;
+        /* required */
         align-items: center;
+        /* required */
     }
 
     .cat-breed {
         flex: 1 1 100%;
+        /* required */
         max-width: 100%;
+        /* required */
     }
 }
